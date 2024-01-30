@@ -1,0 +1,227 @@
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+
+footer {
+    .articlesection {
+        background: url(../images/footer-bg.jpg) no-repeat left center / cover;
+        position: relative;
+        padding: 90px 0 50px;
+
+        @media only screen and (max-width: 767px) {
+            padding: 40px 0;
+        }
+
+
+
+        span {
+            font-family: $mediumfont;
+            font-size: rems(16);
+            color: #ff4444;
+
+            display: inline-block;
+        }
+
+        h2 {
+            font-family: $lightfont;
+            font-size: rems(48);
+            color: $whitecolor;
+            margin-bottom: 15px;
+            line-height: 1;
+            display: block;
+
+            @media only screen and (max-width: 767px) {
+
+                font-size: rems(32);
+            }
+
+            @media only screen and (max-width:480px) {
+
+                font-size: rems(24);
+            }
+
+
+        }
+
+        p {
+            font-family: $basefontfamily;
+            font-size: rems(16);
+            color: $whitecolor;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            display: block;
+        }
+
+        a {
+            font-family: $basefontfamily;
+            font-size: rems(16);
+            padding: 0 20px;
+            line-height: 42px;
+        }
+    }
+
+    .newsletter {
+        padding: 30px 0;
+        background: #dee2e2;
+
+        h3 {
+            font-family: $basefontfamily;
+            font-size: rems(18);
+            color: #041016;
+            margin: 0;
+            line-height: 1;
+            display: block;
+        }
+
+        p {
+            font-family: $basefontfamily;
+            font-size: rems(14);
+            color: #031015;
+            margin: 0;
+            display: block;
+        }
+
+        .newsletterform {
+            form {
+                input {
+                    background: $whitecolor;
+                    border-radius: 0;
+                    padding: 7px 15px 7px 35px;
+                    height: 40px;
+                    color: #646464;
+                    font-size: 15px;
+                    min-width: 270px;
+                    font-family: $basefontfamily;
+                }
+
+                button {
+                    background: $themecolor;
+                    color: $whitecolor;
+                    border: 0;
+                    padding: 5px 15px 8px;
+                    font-size: 27px;
+                    height: 40px;
+                    vertical-align: top;
+                    margin-left: -2px;
+
+                    i {}
+                }
+            }
+        }
+    }
+
+    .footer {
+        .partners-footer {
+            border-bottom: solid 2px #edf1f0;
+            padding: 30px 0 25px;
+
+            h3 {
+                font-family: $basefontfamily;
+                font-size: rems(24);
+                color: #ca2018;
+                margin-bottom: 10px;
+
+                display: block;
+            }
+
+            ul {
+                li {
+                    margin-right: 30px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .footerinner {
+        padding: 60px 0 30px;
+
+        @media only screen and (max-width: 767px) {
+
+            padding: 10px 0;
+        }
+
+        .footer-widget {
+
+            &.text-right {
+                @media only screen and (max-width: 767px) {
+
+                    text-align: left !important;
+                }
+            }
+
+            h3 {
+                color: #747373;
+                font-size: rems(24);
+                font-family: $basefontfamily;
+                list-style: 1;
+                margin: 0 0 15px;
+
+                @media only screen and (max-width: 767px) {
+
+                    margin-top: 20px;
+                }
+            }
+
+            p {
+                color: #625e5e;
+                font-size: rems(16);
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    color: #747373;
+                    font-size: rems(16);
+                    font-family: $basefontfamily;
+
+                    padding: 7px 0;
+
+                    a {
+                        color: #747373;
+
+                        &:hover {
+                            color: $themecolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background: #edf1f0;
+        padding: 7px 0;
+
+        p {
+            color: #464443;
+            font-size: rems(12);
+            font-family: $basefontfamily;
+            list-style: 1;
+            margin: 0;
+             @media only screen and (max-width: 767px) {
+
+                    text-align: center !important;
+                    margin-bottom: 10px;
+                }
+        }
+
+        ul {
+             @media only screen and (max-width: 767px) {
+
+                    text-align: center !important;
+                }
+            li {
+                display: inline-block;
+                margin-left: 15px;
+                padding: 1px 7px;
+                background: #fff;
+
+                a {
+                    color: #1a1a1a;
+
+                    i {}
+                }
+            }
+        }
+    }
+}
